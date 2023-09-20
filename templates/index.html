@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <title>Soil Texture Calculator</title>
+
+</head>
+<body>
+    <section class="container">
+        <img style="display: block; margin-left: auto; margin-right: auto; width: 15%;" src="..\static\css\header.png">
+        <header> Soil Texture Calculator</header>
+        
+
+        <form method="POST" action= "/calculate" class="form">
+            <div class="input-box">
+                <label>Sand</label><br>
+                <input type="text" name = "Sand" placeholder="Enter sand percentage" required>
+            </div>
+            
+            <div class="input-box">
+                <label>Clay</label><br>
+                <input type="text" name = "Clay" placeholder="Enter clay percentage" required>
+            </div>
+                
+            <input type="submit" value = "Calculate" class="button">
+            <br>
+            <br>
+            <div class="results">
+                <div style="font-size: larger;">
+                    {%if sand%}
+                    <p style="font-size: x-large;text-decoration: underline;display: flex; flex-direction: column; justify-content: center; align-items: center;">Results:</p>
+                    <p>Sand percentage is: <b>{{sand}}</b></p>
+                    {%endif%}
+                </div>
+    
+                <div style="font-size: larger;">
+                    {%if clay%}
+                    <p>Clay percentage is: <b>{{clay}}</b></p>
+                    {%endif%}
+                </div>
+    
+                <div style="font-size: larger;">
+                    {%if silt%}
+                    <p>Silt percentage is: <b>{{silt}}</b></p>
+                    {%endif%}
+                </div>
+                <div style="font-size: x-large;  margin-top: 1%;">
+                    {%if soil_name%}
+                    <p>Type of this soil is: <b>{{soil_name}}</b></p>
+                    {%endif%}
+                </div>
+                
+            </div>
+            
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                {%if plot_url%}
+                    <img src = {{plot_url}} alt="Something went wrong" class="responsive" max-width=700>
+                    <button class="new_button" onclick="parent.location='./'" >Reset</button>
+                {%endif%}
+            
+            </div>
+
+            <br>
+
+            <div class="footer">
+                <p>Developed by <a href="https://linkedin.com/in/shyamendrasingh" target="_blank">@Shyamendra Singh</a></p>
+
+            </div>
+        </form>
+    </section>
+</body>
+</html>

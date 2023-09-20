@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+/* .center {
+    margin-left: 200px;
+  } */
+.container header{
+    font-size:1.8rem;
+    font-weight:600;
+    text-align: center;
+}
+
+/* .container .results{
+    position: relative;
+    width: 100%;
+    margin: 10;
+    background: #fff;
+    padding-left: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size:larger;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+} */
+.container form{
+    margin-top: 20px;
+}
+
+.form label{
+    font-size:larger;
+    font-weight:400;
+}
+
+.form .input-box{
+    margin-top: 18px;
+    width: 100%;
+}
+
+ 
+
+.form .input-box input{
+    margin-top: 8px;
+    position: relative;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 15px;
+}
+
+.form .button{
+    height: 50px;
+    width: 100%;
+    font-size: larger;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    background-color: rgb(6, 2, 10);
+    
+}
+
+.form .button:hover{
+    background-color: rgb(22, 16, 29);
+
+}
+
+.new_button{
+    height: 50px;
+    width: 50%;
+    font-size: larger;
+    color: #fff;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    background-color: rgb(25, 24, 26);
+    
+}
+
+.new_button:hover{
+    background-color: rgb(12, 9, 15);
+
+}
+
+.form .footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: larger;
+    color: #4a4a5f;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:600)
+{
+    
+}
