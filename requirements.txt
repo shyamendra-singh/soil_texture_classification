@@ -1,4 +1,5 @@
 streamlit
-flask
-matplotlib>=3.5.0
+Flask==2.3.2
+matplotlib==3.5.2
+matplotlib-inline==0.1.3
 python-ternary
