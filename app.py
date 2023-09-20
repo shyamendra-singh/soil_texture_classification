@@ -104,7 +104,3 @@ def tex_calculate():
     ternary.plt.plot()
     figure.savefig('static/css/my_plot.png')
     return render_template('index.html', sand=sand, clay= clay, silt=silt, soil_name = region_name, plot_url ='static/css/my_plot.png')
-
-
-if __name__ == '__main__':
-    app.run()
